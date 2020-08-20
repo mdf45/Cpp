@@ -1,16 +1,15 @@
 #include <iostream>
 
-template <class Ta, class Tb>
-void swap(Ta& a, Tb& b) {
-    Ta temp = a;
+template <class T>
+void swap(T& a, T& b) {
+    T temp = a;
     a = b;
     b = temp;
 }
 
 int main()
 {
-    int a = 5;
-    double b = 10;
+    int a = 5, b = 10;
 
     std::cout << "a = " << a << std::endl;
     std::cout << "b = " << b << std::endl;
